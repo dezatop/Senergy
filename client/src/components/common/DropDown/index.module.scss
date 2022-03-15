@@ -1,0 +1,70 @@
+@import "src/styles/variables";
+
+.groupName {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  border: 1px solid $gray;
+  padding: 8px 16px;
+
+  > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    color: $text;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  &Drop {
+    position: absolute;
+    border: 1px solid $gray;
+    background-color: #fff;
+    left: -1px;
+    top: 0;
+    width: calc(100% + 2px);
+    transform: translateY(42px);
+
+    > ul {
+      list-style: none;
+      max-height: 120px;
+      overflow-y: auto;
+
+      > li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 8px 16px;
+        color: $text;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #EDF4FF;
+        }
+      }
+    }
+  }
+}
+
+.selectGroup {
+  display: flex;
+  margin-top: 16px;
+  flex-wrap: wrap;
+
+  > div {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    > svg {
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+}

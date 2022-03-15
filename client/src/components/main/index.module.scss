@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+
+.addUser {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding: 0 16px;
+}
+
+.wpTable {
+  max-width: 1100px;
+  margin: 30px auto 0px;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.wrapUsInfo {
+  width: 350px;
+}
+
+.buttonAddUser {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.delButton {
+  margin-top: 16px;
+  width: 100%;
+  color: #ffffff!important;
+  background-color: #ff0051!important;
+  border: 1px solid #ff0051;
+  &:hover {
+    background-color: #ff0051;
+  }
+}
+
+.wpButton {
+  position: relative;
+}

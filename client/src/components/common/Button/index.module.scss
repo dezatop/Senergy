@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.customButton {
+  border: 1px solid $blue;
+  color: $blue;
+  padding: 8px 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover{
+    background-color: $blue;
+    color: #fff;
+  }
+}

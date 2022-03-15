@@ -1,0 +1,26 @@
+.confirm {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 16px;
+  left: 40px;
+  color: #ffffff;
+  padding: 9px 40px;
+  transform: translateX(-200px);
+  transition: transform 0.3s;
+  z-index: 50;
+  border-radius: 7px;
+
+  &Active{
+    transform: translateX(100px);
+  }
+}
+
+.failed {
+  background-color: #ff0051;
+}
+
+.success {
+  background-color: #11ec1c;
+}
